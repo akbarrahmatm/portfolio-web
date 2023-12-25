@@ -1,3 +1,4 @@
+import { GithubRepoDisplay } from "github-repo-display-react"
 import {Container, Row, Col, Card, Button, Small} from "react-bootstrap"
 import projectImg from "../asset/project/landing-page.jpg"
 import swabinImg from "../asset/project/swabin.jpg"
@@ -64,6 +65,12 @@ const Project = () => {
                         </Col>
                         
                     </Row>
+                </div>
+                <div>
+                <GithubRepoDisplay
+                    numOfrepos={5} // must be included
+                    userName='akbarrahmatm'
+                />
                 </div>
             </Container>
         </div>
